@@ -337,7 +337,7 @@ ul {
 }
 .footer-contact-icon {
   font-size: 17px;
-  color: var(--primary-accent);
+  color: #FFFFFF;
   flex-shrink: 0;
 }
 
