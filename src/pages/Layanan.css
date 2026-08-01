@@ -1,0 +1,986 @@
+/* =============================================
+   LAYANAN – Professional Redesign
+   ============================================= */
+
+/* ── Shared Variables ── */
+.ly-section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.ly-section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--brand-blue);
+  margin: 0 0 10px;
+  line-height: 1.2;
+}
+.ly-section-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #3A4F66;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* ── Shared Buttons ── */
+.ly-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: var(--primary-accent);
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(46, 45, 48, 0.35);
+  transition: all 0.3s ease;
+}
+.ly-btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(46, 45, 48, 0.5);
+}
+.ly-btn-lg {
+  font-size: 17px;
+  padding: 16px 38px;
+}
+.ly-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.ly-btn-outline:hover {
+  border-color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ══════════════════════════════════════
+   HERO
+   ══════════════════════════════════════ */
+.ly-hero {
+  background: var(--brand-blue) url('/images/bg-artikel.jpg') center/cover no-repeat;
+  position: relative;
+}
+.ly-hero-overlay {
+  background: linear-gradient(135deg, rgba(59, 167, 250, 0.92), rgba(0, 0, 0, 0.65));
+  padding: 100px 0 90px;
+}
+.ly-hero-content {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+.ly-hero-badge {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(46, 45, 48, 0.25);
+  border: 1px solid rgba(46, 45, 48, 0.4);
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.ly-hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+.ly-hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  margin: 0 0 32px;
+}
+.ly-hero-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ══════════════════════════════════════
+   SERVICE CARDS GRID
+   ══════════════════════════════════════ */
+.ly-services {
+  padding: 80px 0 60px;
+  background: #F8F9FB;
+}
+.ly-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.ly-service-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 40px 24px 32px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #EEF0F5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ly-service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-accent);
+}
+.ly-service-icon-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-accent), var(--accent-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(46, 45, 48, 0.3);
+}
+.ly-service-icon-circle svg {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.ly-service-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--brand-blue);
+  margin: 0 0 8px;
+}
+.ly-service-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #6B7C93;
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* ══════════════════════════════════════
+   PELAYANAN UTAMA
+   ══════════════════════════════════════ */
+.ly-utama {
+  padding: 80px 0;
+  background: #FFFFFF;
+}
+.ly-utama-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.ly-utama-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  background: #F8F9FB;
+  border-radius: 14px;
+  padding: 28px 24px;
+  border: 1px solid #EEF0F5;
+  transition: all 0.3s ease;
+}
+.ly-utama-card:hover {
+  background: #F5F5F5;
+  border-color: #D6D5D7;
+  box-shadow: 0 4px 16px rgba(46, 45, 48, 0.08);
+}
+.ly-utama-card-num {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--primary-accent);
+  line-height: 1;
+  flex-shrink: 0;
+  opacity: 0.4;
+  min-width: 40px;
+}
+.ly-utama-card-body {
+  flex: 1;
+}
+.ly-utama-card-body h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--brand-blue);
+  margin: 0 0 6px;
+}
+.ly-utama-card-body p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #6B7C93;
+  line-height: 1.6;
+  margin: 0;
+}
+.ly-utama-card-check {
+  font-size: 20px;
+  color: #22C55E;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+/* ══════════════════════════════════════
+   PELAYANAN TAMBAHAN
+   ══════════════════════════════════════ */
+.ly-tambahan {
+  padding: 80px 0;
+  background: #F8F9FB;
+}
+.ly-tambahan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.ly-tambahan-card {
+  background: #FFFFFF;
+  border-radius: 14px;
+  padding: 32px 28px;
+  border: 1px solid #EEF0F5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+.ly-tambahan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  border-color: var(--brand-blue);
+}
+.ly-tambahan-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #EBF5FD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.ly-tambahan-icon-wrap svg {
+  font-size: 22px;
+  color: var(--brand-blue);
+}
+.ly-tambahan-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--brand-blue);
+  margin: 0 0 6px;
+}
+.ly-tambahan-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #6B7C93;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ══════════════════════════════════════
+   STATS COUNTER
+   ══════════════════════════════════════ */
+.ly-stats {
+  background: var(--brand-blue) url('/images/bg-web-decorator.jpg') center/cover no-repeat;
+}
+.ly-stats-overlay {
+  background: rgba(59, 167, 250, 0.93);
+  padding: 70px 0;
+}
+.ly-stats-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.ly-stat-item {
+  flex: 1;
+  text-align: center;
+  padding: 20px 30px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.ly-stat-item:last-child {
+  border-right: none;
+}
+.ly-stat-icon-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(46, 45, 48, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+.ly-stat-icon-circle svg {
+  font-size: 24px;
+  color: var(--accent-light);
+}
+.ly-stat-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.ly-stat-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* ══════════════════════════════════════
+   MID CTA
+   ══════════════════════════════════════ */
+.ly-mid-cta {
+  padding: 60px 0;
+  background: #FFFFFF;
+}
+.ly-mid-cta-card {
+  background: linear-gradient(135deg, var(--brand-blue), #34A0F0);
+  border-radius: 20px;
+  padding: 50px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  box-shadow: 0 12px 40px rgba(59, 167, 250, 0.25);
+  flex-wrap: wrap;
+}
+.ly-mid-cta-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 8px;
+}
+.ly-mid-cta-text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  line-height: 1.5;
+  max-width: 480px;
+}
+
+/* ══════════════════════════════════════
+   FAQ
+   ══════════════════════════════════════ */
+.ly-faq {
+  padding: 80px 0;
+  background: #F8F9FB;
+}
+.ly-faq-list {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ly-faq-item {
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: 1px solid #EEF0F5;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.ly-faq-item.active {
+  border-color: #D6D5D7;
+  box-shadow: 0 4px 16px rgba(46, 45, 48, 0.08);
+}
+.ly-faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--brand-blue);
+  text-align: left;
+  line-height: 1.5;
+}
+.ly-faq-q-text {
+  flex: 1;
+}
+.ly-faq-chevron {
+  font-size: 14px;
+  color: var(--primary-accent);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+.ly-faq-item.active .ly-faq-chevron {
+  transform: rotate(180deg);
+}
+.ly-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 24px;
+}
+.ly-faq-item.active .ly-faq-answer {
+  max-height: 400px;
+  padding: 0 24px 20px;
+}
+.ly-faq-answer p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #6B7C93;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ══════════════════════════════════════
+   BOTTOM CTA
+   ══════════════════════════════════════ */
+.ly-bottom-cta {
+  background: linear-gradient(135deg, #2D8FD4, var(--brand-blue));
+  padding: 80px 0;
+  text-align: center;
+}
+.ly-bottom-cta h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0 0 14px;
+}
+.ly-bottom-cta p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 32px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE – Tablet
+   ══════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .ly-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ly-hero-title {
+    font-size: 36px;
+  }
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE – Mobile
+   ══════════════════════════════════════ */
+@media (max-width: 768px) {
+  .ly-hero-overlay {
+    padding: 70px 0 60px;
+  }
+  .ly-hero-title {
+    font-size: 28px;
+  }
+  .ly-hero-subtitle {
+    font-size: 15px;
+  }
+  .ly-hero-btns {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .ly-btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ly-section-header {
+    margin-bottom: 30px;
+  }
+  .ly-section-title {
+    font-size: 24px;
+  }
+  .ly-section-desc {
+    font-size: 14px;
+  }
+
+  .ly-services {
+    padding: 60px 0 40px;
+  }
+  .ly-services-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .ly-service-card {
+    padding: 28px 16px 24px;
+  }
+  .ly-service-icon-circle {
+    width: 56px;
+    height: 56px;
+  }
+  .ly-service-icon-circle svg {
+    font-size: 24px;
+  }
+  .ly-service-card h3 {
+    font-size: 15px;
+  }
+  .ly-service-card p {
+    font-size: 12px;
+  }
+
+  .ly-utama,
+  .ly-tambahan {
+    padding: 60px 0;
+  }
+  .ly-utama-grid,
+  .ly-tambahan-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .ly-utama-card {
+    padding: 22px 18px;
+    gap: 14px;
+  }
+  .ly-utama-card-num {
+    font-size: 22px;
+    min-width: 30px;
+  }
+  .ly-utama-card-body h3 {
+    font-size: 15px;
+  }
+
+  .ly-tambahan-card {
+    padding: 24px 20px;
+  }
+
+  .ly-stats-overlay {
+    padding: 50px 0;
+  }
+  .ly-stats-grid {
+    flex-direction: column;
+    gap: 0;
+  }
+  .ly-stat-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 24px 20px;
+  }
+  .ly-stat-item:last-child {
+    border-bottom: none;
+  }
+  .ly-stat-number {
+    font-size: 42px;
+  }
+
+  .ly-mid-cta {
+    padding: 40px 15px;
+  }
+  .ly-mid-cta-card {
+    padding: 36px 24px;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .ly-mid-cta-text h2 {
+    font-size: 24px;
+  }
+  .ly-mid-cta-text p {
+    max-width: 100%;
+  }
+
+  .ly-faq {
+    padding: 60px 0;
+  }
+  .ly-faq-question {
+    font-size: 14px;
+    padding: 16px 18px;
+  }
+
+  .ly-bottom-cta {
+    padding: 50px 16px;
+  }
+  .ly-bottom-cta h2 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .ly-bottom-cta p {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .ly-bottom-cta .ly-btn-primary {
+    width: 100%;
+    max-width: 340px;
+    justify-content: center;
+    font-size: 14px;
+    padding: 14px 24px;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 480px) {
+  .ly-hero-title {
+    font-size: 24px;
+  }
+  .ly-hero-badge {
+    font-size: 11px;
+    padding: 5px 14px;
+  }
+  .ly-services-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .ly-service-card {
+    padding: 22px 12px 18px;
+    border-radius: 12px;
+  }
+  .ly-service-icon-circle {
+    width: 48px;
+    height: 48px;
+  }
+  .ly-service-icon-circle svg {
+    font-size: 20px;
+  }
+  .ly-service-card h3 {
+    font-size: 13px;
+  }
+  .ly-service-card p {
+    font-size: 11px;
+  }
+  .ly-btn-primary {
+    font-size: 14px;
+    padding: 12px 24px;
+    width: 100%;
+    justify-content: center;
+  }
+  .ly-btn-lg {
+    font-size: 15px;
+    padding: 14px 28px;
+  }
+  .ly-bottom-cta h2 {
+    font-size: 22px;
+  }
+  .ly-bottom-cta p {
+    font-size: 13px;
+  }
+}
+/* Service Cards Top */
+.layanan-services-top {
+  padding: 50px 0 20px;
+  background: var(--white);
+}
+
+.layanan-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.layanan-service-card {
+  background: var(--light-gray);
+  border-radius: 6px;
+  padding: 28px 18px;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid #e8e8e8;
+  display: block;
+}
+
+.layanan-service-card:hover {
+  background: var(--white);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  border-color: var(--primary-accent);
+}
+
+.layanan-service-icon {
+  width: auto;
+  height: auto;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icons: 50px, dark blue */
+.layanan-service-icon svg {
+  font-size: 50px;
+  color: var(--brand-blue-dark);
+}
+
+/* Card title: Poppins 500, 20px, dark blue */
+.layanan-service-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--brand-blue-dark);
+  line-height: 1.5;
+}
+
+/* Main title: Poppins 700, 17px, RED */
+.layanan-main-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary-accent);
+  text-align: left;
+  max-width: 650px;
+  margin: 0 0 20px;
+  line-height: 1;
+}
+
+/* Pelayanan Sections */
+.layanan-utama {
+  padding: 25px 0;
+  background: var(--white);
+}
+
+.layanan-tambahan {
+  padding: 25px 0 50px;
+  background: var(--white);
+}
+
+/* Section title: Poppins 700, 17px, RED */
+.layanan-section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary-accent);
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.layanan-list-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.layanan-list-item {
+  font-size: 14px;
+  color: var(--text-primary);
+  padding: 12px 18px;
+  background: var(--light-gray);
+  border-radius: 5px;
+  border-left: 3px solid var(--primary-accent);
+  line-height: 1.65;
+  transition: var(--transition);
+}
+
+.layanan-list-item:hover {
+  background: #EEEEEE;
+}
+
+.layanan-list-item strong {
+  color: var(--text-primary);
+}
+
+/* CTA Section */
+.layanan-cta {
+  padding: 50px 10px;
+  background: var(--brand-blue-dark);
+  text-align: center;
+  color: var(--white);
+}
+
+/* CTA h2: Poppins 700, 29px, RED, line-height 1 */
+.layanan-cta h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 29px;
+  font-weight: 700;
+  color: var(--primary-accent);
+  margin-bottom: 22px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1;
+}
+
+/* Stats Section */
+.layanan-stats {
+  padding: 45px 0;
+  background: var(--brand-blue-dark);
+}
+
+.layanan-stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.layanan-stat-card {
+  padding: 20px;
+}
+
+.layanan-stat-label {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.layanan-stat-value {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+}
+
+.layanan-stat-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--primary-accent);
+  line-height: 1;
+}
+
+.layanan-stat-suffix {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* FAQ Section */
+.layanan-faq {
+  padding: 50px 0;
+  background: var(--white);
+}
+
+/* FAQ title: Poppins 700, 29px, dark blue, centered */
+.layanan-faq-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 29px;
+  font-weight: 700;
+  color: var(--brand-blue-dark);
+  margin-bottom: 25px;
+  line-height: 1;
+  text-align: center;
+}
+
+.faq-list {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-align: left;
+  transition: var(--transition);
+  line-height: 1.5;
+}
+
+.faq-question:hover {
+  color: var(--primary-accent);
+}
+
+.faq-question.active {
+  color: var(--primary-accent);
+}
+
+.faq-icon {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-accent);
+  flex-shrink: 0;
+  width: 22px;
+  text-align: center;
+}
+
+.faq-answer {
+  padding: 0 0 18px 34px;
+}
+
+.faq-answer p {
+  font-size: 14px;
+  color: var(--text-primary);
+  line-height: 1.75;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .layanan-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .layanan-main-title {
+    font-size: 15px;
+  }
+
+  .layanan-section-title {
+    font-size: 15px;
+  }
+
+  .layanan-stats-grid {
+    flex-wrap: wrap;
+  }
+
+  .layanan-stat-number {
+    font-size: 36px;
+  }
+
+  .layanan-cta h2 {
+    font-size: 22px;
+  }
+
+  .layanan-faq-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .layanan-services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .layanan-stats-grid {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
